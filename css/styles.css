@@ -1,0 +1,70 @@
+/*****************
+Global Layout Set-up
+******************/
+
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  color: #4a4a4a;
+  background: #fafafa;
+}
+
+header, main, footer {
+    margin: auto;
+  }
+
+h1 {
+  font-family: 'Amaranth', sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: 'Amaranth', sans-serif;
+}
+
+h3 {
+  font-weight: normal;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1.4em;
+}
+
+p {
+  color: #999;
+}
+
+/*****************
+Link Styles 
+******************/
+
+a {
+  text-decoration: none;
+  color: #999;
+  transition: all .5s;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/*****************
+Section Styles 
+******************/
+
+
+
+/*****************
+Styles for desktop 
+******************/
+
+@media screen and (min-width: 769px) {
+  header, main, footer {
+    max-width: 1140px;
+  }
+
+}
