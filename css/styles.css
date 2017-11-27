@@ -17,6 +17,7 @@ body {
 
 header, main, footer {
     margin: auto;
+    width: 90%;
   }
 
 h1 {
@@ -68,19 +69,109 @@ Section Styles
 }
 
 header {
-  border-bottom: 5px solid #2d3945;;
+  border-bottom: 5px solid #2d3945;
+}
+
+form {
+  margin-top: 3px;
+  border-top: 2px solid #2d3945;
+  background-color: #c8e4e2;
+  padding: 10px 0;
+  border-radius: 0 0 5px 5px;
 }
 
 fieldset {
   flex-direction: column;
-}
-
-fieldset {
-  border-top: 2px solid #2d3945;
+  border: 0;
 }
 
 legend {
   display: block;
+  font-size: 1.5em;
+  margin-top: 30px;
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 700px;
+}
+
+.field-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+label {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+input, textarea, select {
+  border: 0;
+  background: #fff;
+  border-radius: 5px;
+  min-height: 35px;
+  padding: 10px;
+}
+
+textarea:focus, input:focus, select:focus {
+  background: #FFFeDF;
+  border: 2px solid #188e85;
+}
+
+input::placeholder {
+  font-style: italic;
+  text-align: right;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-style: italic;
+  text-align: right;
+}
+
+select {
+  color: #2d3945;
+}
+select:invalid{
+  color: #777;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.newsletter .field-wrap {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.newsletter .field-wrap label {
+  flex: 100% 1;
+}
+
+.newsletter .field-wrap input {
+display: inline-block;
+width: 5%;
+} 
+
+.newsletter .field-wrap p {
+display: inline-block;
+width: 95%;
+text-align: left;
+color: #2d3945;
+padding-left: 1%;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+}
+
+input[type="submit"] {
+  background: #52bab3;
+  border: 0px;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  margin: 20px auto;
 }
 
 /*****************
@@ -90,6 +181,16 @@ Styles for desktop
 @media screen and (min-width: 768px) {
   header, main, footer {
     max-width: 800px;
+  }
+  .contact .field-wrap {
+  flex-direction: row;
+  align-items: center;
+  }
+  .contact input, .contact select {    
+  flex: 70% 2;
+  }
+  .contact label {
+    flex: 30% 1;
   }
 
 }
