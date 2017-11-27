@@ -45,8 +45,8 @@
             </div>
             <div class="field-wrap">
               <label for="state">State</label> 
-              <select id="state" name="user_state" placeholder="Choose a State" required>
-                  <option value="" disabled selected>Choose your State</option>
+              <select id="state" name="user_state">
+                  <option selected="selected" value="State" class="placeholder">Choose your State</option>
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -110,16 +110,16 @@
 
         <fieldset class="newsletter flex">
           <legend>Newsletter</legend>
-            <div class="field-wrap">
-              <label for="newsletters">Select the newsletters you would like to receive</label> 
-              <input type="checkbox" id="newsletters" name="news_choice" value="HTML News"><p> HTML News</p><br>
-              <input type="checkbox" id="newsletters" name="news_choice" value="CSS News"><p> CSS News</p><br>
-              <input type="checkbox" id="newsletters" name="news_choice" value="Javascript News"><p> Javascript News</p><br>
+            <p>Select the newsletters you would like to receive</p>
+            <div class="field-wrap"> 
+              <input type="checkbox" id="html" name="news_choice" value="HTML News"><label for="html"> HTML News</label><br>
+              <input type="checkbox" id="css" name="news_choice" value="CSS News"><label for="css"> CSS News</label><br>
+              <input type="checkbox" id="javascript" name="news_choice" value="Javascript News"><label for="javascript"> Javascript News</label><br>
             </div>
+            <p>Newsletter Format</p> 
             <div class="field-wrap">
-              <label for="format">Newsletter Format</label> 
-              <input type="radio" id="format" name="user_format" value="HTML"><p> HTML</p><br>
-              <input type="radio" id="format" name="user_format" value="Plain Text"><p> Plain Text</p>
+              <input type="radio" id="html-format" name="user_format" value="HTML"><label for="html-format">  HTML</label><br>
+              <input type="radio" id="plain-format" name="user_format" value="Plain Text"><label for="plain-format"> Plain Text</label>
             </div>
             <div class="field-wrap">
               <label for="topics">Other topics you'd like to hear about</label> 
