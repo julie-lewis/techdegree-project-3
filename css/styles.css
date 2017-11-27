@@ -154,10 +154,16 @@ textarea:focus, input:focus, select:focus {
     text-align: right;
 }
 
-.placeholder {
+select {
   color: #999;
-  font-style: italic;
-  text-align: right;
+}
+
+option {
+  color: #2d3945;
+}
+
+option:first-child {
+  color: #999;
 }
 
 .newsletter .field-wrap {
